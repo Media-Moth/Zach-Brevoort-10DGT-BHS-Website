@@ -1,0 +1,181 @@
+/* global styling*/
+html {
+  margin: 0rem 2rem;
+  background-color: #000000;
+  font-family: Verdana;
+  color: white;
+}
+
+/* Banner image*/
+.header {
+  width: 100%;
+  background-size: cover;
+}
+
+.header img {
+  width: 100%;
+}
+
+/*the navbar styling goes here*/
+/* nav bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ /* background-color: #75518C; */
+  background-image: linear-gradient(to top left, #75518C 48%, transparent 48%), linear-gradient(to top right, #75518C 48%, #BD6DF2 48%);
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* how the list of pages sits */
+nav ul li {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/* the nav text */
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #fbb7ff;
+}
+
+nav #active {
+  background-color: #021526;
+}
+
+/* Styling for the main section*/
+/* This is the line between the main section and footer */
+main {
+  border-bottom: 3px solid;
+  color: #F1A0F2;
+}
+
+h2 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Styling for the image container and the items inside it */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/*Items for all the screenshots and pictures of your stuff*/
+.item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  min-width: 8rem;
+  margin: 0.5rem;
+}
+
+.item-info {
+  padding: 0.1rem;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+}
+
+.welcome {
+  position: relative;
+  align-items: center;
+  font-size: 1.75em;
+}
+
+.welcome h1:nth-child(1) {
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  white-space: nowrap;
+  animation: water 6s ease-in-out infinite;
+  color: #bd6df2;
+  z-index: 1;
+}
+
+.welcome h1:nth-child(2) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  color: black;
+
+  -webkit-text-stroke: 1px #bd6df2;
+
+}
+
+@keyframes water {
+  0% {
+    clip-path: polygon(0% 47%, 8% 41%, 16% 38%, 25% 39%, 31% 45%, 35% 51%, 45% 61%, 55% 65%, 68% 66%, 82% 64%, 89% 61%, 100% 56%, 100% 100%, 0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 59%, 6% 66%, 18% 70%, 35% 70%, 45% 64%, 53% 56%, 61% 44%, 65% 35%, 76% 26%, 85% 20%, 93% 18%, 100% 20%, 100% 100%, 0% 100%);
+
+  }
+  100% {
+    clip-path: polygon(0% 47%, 8% 41%, 16% 38%, 25% 39%, 31% 45%, 35% 51%, 45% 61%, 55% 65%, 68% 66%, 82% 64%, 89% 61%, 100% 56%, 100% 100%, 0% 100%);
+
+
+  }
+}
+/* animation: rainbow 1s infinite;
+@keyframes rainbow {
+
+  0%{color:#021526;}
+  10%{color:#1F1640;}
+  40%{color:#75518C;}
+  60%{color:#BD6DF2;}
+  80%{color:#F1A0F2}
+  100%{color:#021526;}
+ } */
+.galaxytext {
+  background-image: url("images/GalaxyText.png");
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+div.border {
+  border-style: dotted dotted double dotted;
+  border-color: #bd6df2;
+  border-width: thick;
+  background-color: #BD6DF2;
+}
+#background {
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 200%;
+
+}
+#background[resize] {
+    width: 100%;
+    height: 200%;
+}
