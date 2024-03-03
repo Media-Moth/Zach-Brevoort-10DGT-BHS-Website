@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     paper.setup('background');
 
 //var stars = new Symbol(star); i used symbols previously but you couldn't change the indivual color
-var number = 700;
+var number = 500;
 let positions = [];
   for (var i = 0; i < number; i++) {
     var star = new Path.Star({
