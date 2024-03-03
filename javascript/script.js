@@ -15,7 +15,7 @@ let positions = [];
         fillColor: '#65D8E6',
     });
     star.fillColor.hue = i * 0.2 + 180;
-    star.fillColor.lightness = 0.7
+    star.fillColor.lightness = 0.75;
       ;
     star.rotate(45);
     var point = view.size;
